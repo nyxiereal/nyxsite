@@ -1,17 +1,10 @@
 import { defineConfig } from 'vite'
-import tailwindcss from '@tailwindcss/vite'
-import { resolve } from 'path'
+import vue from '@vitejs/plugin-vue'
+import vuetify from 'vite-plugin-vuetify'
 
 export default defineConfig({
   plugins: [
-    tailwindcss(),
+    vue(),
+    vuetify({ autoImport: true }),
   ],
-  build: {
-    rollupOptions: {
-      input: {
-        main: resolve(__dirname, 'index.html'),
-        projects: resolve(__dirname, 'projects.html'),
-      },
-    },
-  },
 })
