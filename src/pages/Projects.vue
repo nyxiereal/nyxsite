@@ -5,7 +5,7 @@
                 Back to Home
             </v-btn>
 
-            <h1 class="text-h1 text-md-h1 font-weight-bold mb-3"><span class="climate-font">Projects</span></h1>
+            <h1 class="text-h1 text-md-h1 font-weight-bold mb-3 title-wrap"><span class="climate-font">Projects</span></h1>
             <p class="text-h6 text-medium-emphasis mb-6">List of projects I've built and maintain</p>
 
             <v-row dense>
@@ -15,7 +15,7 @@
                             <v-row align="center">
                                 <v-col cols="12" md="">
                                     <div class="d-flex align-center mb-2">
-                                        <h2 class="text-h4 font-weight-bold">{{ project.title }}</h2>
+                                        <h2 class="text-h4 font-weight-bold title-wrap">{{ project.title }}</h2>
                                     </div>
                                     <p class="text-body-1 text-medium-emphasis mb-2">{{ project.description }}</p>
 
@@ -226,5 +226,14 @@ const projects = processProjects(projectsData)
 
     margin-right: 8px;
     object-fit: contain;
+}
+
+/* Prevent title overflow on mobile devices */
+.title-wrap {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    word-break: break-word;
+    hyphens: auto;
+    max-width: 100%;
 }
 </style>
