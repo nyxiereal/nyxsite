@@ -7,7 +7,7 @@
             <v-row align="center">
               <v-col cols="12" md="auto" class="text-center">
                 <v-avatar size="160" rounded="lg">
-                  <v-img src="pfp.jpg" alt="profile picture" />
+                  <v-img src="pfp.webp" alt="profile picture" />
                 </v-avatar>
               </v-col>
 
