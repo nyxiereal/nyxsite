@@ -232,7 +232,6 @@ const projects = processProjects(projectsData)
 .title-wrap {
     word-wrap: break-word;
     overflow-wrap: break-word;
-    word-break: break-word;
     hyphens: auto;
     max-width: 100%;
 }
